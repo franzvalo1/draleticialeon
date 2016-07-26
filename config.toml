@@ -1,0 +1,162 @@
+baseurl = "http://replace-this-with-your-website-url.com/"
+title = "Dra. Leticia León Sosa. Médico de Primer Contacto."
+copyright = "&copy; 2016 Francisco León "
+languageCode = "en-us"
+theme = "academic"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = "spf13"
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = ""
+
+
+[params]
+  name = "Dra. Leticia León Sosa"
+  role = "Medico Cirujano"
+  organization = "Universidad Nacional Autónoma de México"
+  avatar = "portrait.jpg"
+  email = "leticialeonsosa@hotmail.com"
+  address = "Encuadernadores No 47 -A Colonia. Ampliación Penitenciaría. Delegación. Venustiano Carranza. Ciudad de México"
+  phone = "Casa 57953050 Celular 5560883522"
+
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Mon, Jan 2, 2006"
+
+  # Enable global LaTeX math rendering? If false, you can enable it locally on a per page basis.
+  math = false
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Link custom CSS and JS assets (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+
+  # Biography section.
+  # Section will only be displayed if `content/home/about.md` exists.
+  [params.about]
+    interests = ["Medicina", "Salud", "Sociedad", "Atención de Primer Contacto"]
+    str_interests = "Intereses"
+    str_education = "Educación"
+
+    [[params.about.education]]
+      course = "Médico Cirujano"
+      institution = "Universidad Nacional Autónoma de México"
+      year = 1980
+
+    [[params.about.education]]
+      course = "Cardiología Pediátrica"
+      institution = "Asociación Mexicana de Pediatría"
+      year = 2015
+
+    [[params.about.education]]
+      course = "Patología Tiroidea en el Primer Nivel de Atención"
+      institution = "Fundación Best"
+      year = 2015
+
+    [[params.about.education]]
+      course = "Actualmente tomando el curso: Prevención de la Enfermedad Renal Crónica"
+      institution = "Organización Panamericana de la Salud"
+      year = 2016
+
+
+  # Selected Publications section.
+  # Section will only be displayed if there are publications with `selected = true` in their `+++` preamble.
+  [params.publications_selected]
+    detailed_list = true
+    title = "Ubicación"
+    subtitle = ""	
+
+  # Publications section.
+  # Section will only be displayed if there are publications in `content/publication/`.
+  [params.publications]
+    count = 10
+    detailed_list = false
+    title = "Recent Publications"
+    subtitle = ""
+    str_all = "More Publications"
+
+  # Posts section.
+  # Section will only be displayed if there are posts in `content/post/`.
+  [params.posts]
+    count = 5
+    title = "Ubicación"
+    detailed_list = true
+    subtitle = ""
+    str_all = "More Posts"
+    str_read_more = "Read more"
+
+  # Projects section.
+  # Section will only be displayed if there are projects in `content/project/`.
+  [params.projects]
+    title = "Ubicación"
+    subtitle = ""
+
+  # Contact section.
+  [params.contact]
+    enable = true
+    title = "Contacto"
+    subtitle = ""
+    autolink = true  # Automatically link email and phone?
+
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus, youtube, instagram, soundcloud
+  #   For email icon, use "fa" icon pack, "envelope" icon, and "mailto:your@email.com" as the link.
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #   Full list: https://jpswalsh.github.io/academicons/
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:leticialeonsosa@hotmail.com"
+
+  [[params.social]]
+    icon = "facebook-square"
+    icon_pack = "fa"
+    link = "https://www.facebook.com/DraLeticiaLeon/?ref=aymt_homepage_panel"
+
+  [[params.social]]
+    icon = "heartbeat"
+    icon_pack = "fa"
+    link = "http://www.doctoralia.com.mx/medico/leon+sosa+leticia-14808918"
+
+  [[params.social]]
+    icon = "user-md"
+    icon_pack = "fa"
+    link = "https://goo.gl/maps/ZTg8MviSXsm"
+
+
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+
+[[menu.main]]
+  name = "Inicio"
+  url = "#top"
+  weight = 1
+
+[[menu.main]]
+  name = "Ubicación e Instalaciones"
+  url = "#projects"
+  weight = 2
+
+[[menu.main]]
+  name = "Horario"
+  url = "#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Precios"
+  url = "#teaching"
+  weight = 5
+
+[[menu.main]]
+  name = "Contacto"
+  url = "#contact"
+  weight = 6
